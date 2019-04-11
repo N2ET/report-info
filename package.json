@@ -1,0 +1,25 @@
+{
+  "name": "@sxf/report-info",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N2ET/report-info.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N2ET/report-info/issues"
+  },
+  "homepage": "https://github.com/N2ET/report-info#readme",
+  "dependencies": {
+    "glob": "^7.1.3",
+    "request": "^2.88.0",
+    "shelljs": "^0.8.3"
+  }
+}
