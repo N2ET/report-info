@@ -13,6 +13,7 @@ exports.getData = function (data = {}, options = {}) {
     }
 
     data.package = {
+        name: pkg.name || '',
         version: pkg.version || '',
         scripts: pkg.scripts || ''
     };

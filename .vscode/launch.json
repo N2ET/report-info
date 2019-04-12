@@ -14,8 +14,16 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "启动程序",
-            "program": "${workspaceFolder}\\index.js"
+            "name": "bin",
+            "program": "${workspaceFolder}\\bin\\index.js",
+            "cwd": "${workspaceFolder}/test",
+            "args": [
+                "--extra-data-path",
+                "extra",
+                "--uri",
+                "http://localhost:8000/test",
+                "--debug"
+            ]
         }
     ]
 }
