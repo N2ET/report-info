@@ -15,7 +15,9 @@ exports.getData = function (data = {}, options = {}) {
     if (branch.code) {
         logger.error(`[project::getData] exec git branch failed`);
     } else {
-        branchText = (branch.stdout || '').replace(/\*/, '').trim();
+        branchText = (branch.stdout || '').match(/\*\s*(.+)/);
+        branchText = branchText && branchText[1];
+        branchText = branchText.trim();
     }
 
     let info = util.execShell('git remote show origin');
